@@ -8,6 +8,12 @@
 
         <style>
 
+            body {
+
+                background-color: yellow;
+
+            }
+
             button {
 
                 padding: 30px;
@@ -20,6 +26,14 @@
 
             }
 
+            .recreation {
+
+                border-style: dashed;
+
+                margin-right: 10px;
+
+            }
+
         </style>
 
     </head>
@@ -28,9 +42,7 @@
 
         <h1 style="text-align: center;"> Clock </h1>
 
-        <div id="txt" style="text-align: center; font-size: 100px; padding-top: 10%;"></div>
-
-        <div id="txt24" style="text-align: center; font-size: 100px; padding-top: 10%;"></div>
+        <div id="txt12" style="text-align: center; font-size: 100px; padding-top: 10px;" class="recreation"></div>
 
         <br>
 
@@ -55,8 +67,6 @@
 
                 document.getElementById('txt12').innerHTML =  h + ":" + m + ":" + s;
 
-                Console.WriteLine(today.ToString("H:mm:ss"));
-
                 // This sets a limit
 
                 setTimeout(startTime, 1000);
@@ -73,8 +83,6 @@
                 let s = today.getSeconds();
                 m = checkTime(m);
                 s = checkTime(s);
-
-                Console.WriteLine = (today.ToString("H:mm:ss"));
 
             }
 
